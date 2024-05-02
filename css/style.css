@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #e50914; 
+    --dark-color: #141414;
+	--light-color: #f4f4f4;
+}
+::selection {
+    background-color:var(--dark-color);    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+
+img {
+    width: 40%;
+}
+
+.showcase {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/d253acf4-a1e2-4462-a416-f78802dc2d85/9832d130-edbc-4e1c-ba2a-31d56d6669d5/EG-en-20240429-POP_SIGNUP_TWO_WEEKS-perspective_WEB_26d28c33-cc33-4361-83f2-dad9271aa8f0_small.jpg') no-repeat center center/cover;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0; 
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 120px 100px 200px #000000, inset -120px -100px 200px #000000;
+}
+.showcase-top {
+    height: 90px;
+    position: relative;
+    z-index: 2;
+}
+.showcase-top img {
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    left: 10%;
+
+}
+
+.showcase-top a {
+    position: absolute;
+    right: 5%;
+    top:40%; 
+    z-index: 2;
+} 
+
+.showcase-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+    z-index: 2;
+    width: 65%;
+}
+
+.showcase-content h1 {
+      font-weight: 800;
+      font-size: 3rem;   
+}
+
+.showcase-content p {
+    text-transform: uppercase;
+    padding: 40px;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.1;
+
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.4rem 1.3rem;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn-xl {
+    font-size: 1.7rem;
+    padding: 1.5rem;
+}
+
+.tabs {
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+	border-right: none;
+}
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.tabs p {
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+}
+.tabs .container >div {
+    padding: 1.5rem 0;
+}
+.tab-border {
+	border-bottom: var(--primary-color) 4px solid;
+}
+.tabs .container >div:hover {
+   color: white;
+   cursor: pointer;
+}
