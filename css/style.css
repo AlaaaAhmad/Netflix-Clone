@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #e50914; 
+    --primary-color: #bb0a12; 
     --dark-color: #141414;
 	--light-color: #f4f4f4;
 }
@@ -14,7 +14,8 @@
 }
 
 body {
-    font: Arial, sans-serif;
+    /* font: 'Arial', sans-serif; */
+    font-family: 'Roboto';
     -webkit-font-smoothing: antialiased;
     background: #000;
     color: gray;
@@ -144,7 +145,7 @@ img {
 }
 .tabs .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
 	align-items: center;
 	justify-content: center;
@@ -152,7 +153,7 @@ img {
 }
 
 .tabs p {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     font-size: 1.3rem;
 }
 .tabs .container >div {
@@ -161,7 +162,51 @@ img {
 .tab-border {
 	border-bottom: var(--primary-color) 4px solid;
 }
+
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3rem;
+    padding-left: 7rem;
+}
+
+#tab-1-content .tab-1-content-inner img {
+    width: 100%;
+}
 .tabs .container >div:hover {
    color: white;
    cursor: pointer;
+}
+.icon1 {
+    color: #bb0a12; 
+}
+
+.icon1 :hover{
+    color: #ffff;
+    cursor:alias;
+}
+
+.text-large {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.text-xl {
+     font-size: 3rem;
+     font-weight: 500;
+     margin-bottom: 1rem;
+     color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-dart {
+    color: #999;
 }
