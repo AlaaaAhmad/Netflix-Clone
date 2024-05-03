@@ -173,6 +173,7 @@ img {
     text-align: center;
     padding-top: 3rem;
     padding-left: 7rem;
+    padding-right: 7rem;
 }
 
 #tab-2-content .tab-2-content-inner,
@@ -282,3 +283,60 @@ img {
     text-decoration: underline;
 }
 
+@media (max-width: 960px) {
+
+    .showcase {
+    height: 80vh;
+}
+
+
+.showcase-content h1 {
+    font-size: 1.9rem;
+    
+}
+
+.showcase-content p {
+    font-size: 1rem;
+}
+.btn-xl {
+    font-size: 0.9rem;
+    padding: 1rem;
+   
+}
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-lg {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.Freq-Questions h1 {
+  
+    font-size: x-large;
+}
+
+.Freq-Questions .container .rectangle {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+.footer {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hide{
+    display: none;
+}
+
+}
+
+@media (max-width: 500px) {
+    #tab-1-content .tab-1-content-inner,
+    #tab-3-content .tab-3-content-inner,
+    #tab-4-content .tab-4-content-inner,
+#tab-2-content .tab-2-content-inner {
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+}
