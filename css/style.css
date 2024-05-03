@@ -238,3 +238,47 @@ img {
 .text-dark {
     color: #999;
 }
+
+.Freq-Questions {
+    text-align: center;
+}
+.Freq-Questions h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: xx-large;
+}
+.Freq-Questions .container .rectangle {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem; 
+    position: relative; 
+    left: 25%; 
+    width: 50%; 
+    background-color: var(--dark-color); 
+    /* height: 50px;  */
+    font-size: 1.5rem;
+   
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.Freq-Questions .container :hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-top: 2rem;
+    margin-left: 2rem;
+}
+
+.footer ul li {
+    padding-top: 1rem;
+    text-decoration: underline;
+}
+
